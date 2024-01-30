@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GITHUBDETAILS GET</title>
+    <link rel="stylesheet" href="git.css">
+    <script type="text/javascript" src="git.js"></script>
+</head>
+
+<body>
+    <h1>DETAILS GET FROM GITHUB </h1>
+    <form method="post" action="#" id="form">
+        <input type="text" id="search" placeholder="Enter Your GitHub UserName Here">
+    </form>
+    <div id="userDetails" style="display: none;">
+        <p>Hi,<b><span id="githubFullName"></span></b>
+        </p>
+        <img src="" width="200px" height="200px" id="githubProfileImage" /><br>
+        <a href="#" id="githubUrl">Visit Your Github Profile</a>
+    </div>
+    <div id="errorInfo" style="display: none;">
+        <p>Error while Feching User Details</p>
+        <p>Please check Your GitHub Profile Name</p>
+    </div>
+</body>
+
+</html>
