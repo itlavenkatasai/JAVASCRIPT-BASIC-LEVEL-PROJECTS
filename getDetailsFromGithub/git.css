@@ -13,3 +13,13 @@ body {
     text-align: center;
     font-size: 20px;
 }
+
+#userDetails {
+    padding-top: 50px;
+}
+
+#errorInfo {
+    padding-top: 50px;
+    color: red;
+    font-size: 50px;
+}

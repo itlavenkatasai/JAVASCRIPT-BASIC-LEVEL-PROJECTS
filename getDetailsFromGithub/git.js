@@ -18,8 +18,19 @@ async function getUserDetails(userName) {
     const url = `https://api.github.com/users/${userName}`;
     try {
         const response = await fetch(url);
-        const data = response.json();
-        console.log(data);
+        if (response.status === 200) {
+            showUserDetails();
+            hideErrorInfo();
+            const data = await response.json();
+            const { avatar_url, html_url, login, name } = data;
+            document.getElementById("githubFullName").innerHTML = name || login;
+            document.getElementById("githubProfileImage").src = avatar_url;
+            document.getElementById("githubUrl").href = html_url;
+        }
+        else {
+            showErrorInfo();
+            hideUserDetails();
+        }
     } catch (error) {
         console.log(error);
     }
