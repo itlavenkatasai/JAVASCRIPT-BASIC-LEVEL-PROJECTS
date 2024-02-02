@@ -8,15 +8,46 @@ body {
 }
 
 #parent {
-    width: 900px;
-    height: 280px;
+    width: auto;
+    height: auto;
     border: 3px solid lightcoral;
     border-radius: 20px;
     background-color: burlywood;
 
 }
 
-#input1{
+#child1 {
+    background-color:powderblue;
+    border: 10px solid lawngreen;
+    border-radius: 20px;
+}
+
+#child2 {
+    background-color: lightskyblue;
+    border: 10px solid lawngreen;
+    border-radius: 20px;
+}
+
+#child3 {
+    background-color:lightsalmon;
+    border: 10px solid lawngreen;
+    border-radius: 20px;
+}
+
+#child4{
+background-color: aquamarine;
+border: 10px solid lawngreen;
+border-radius: 20px;
+}
+
+#input1,
+#input2,
+#input3,
+#input4,
+#output1,
+#output2,
+#output3,
+#output4 {
     width: 300px;
     height: 40px;
     /* text-align: center; */
@@ -25,22 +56,11 @@ body {
     margin-bottom: 20px;
     text-align: center;
 }
-#output1{
-    width: 300px;
-    height: 40px;
-    /* text-align: center; */
-    border: 3px solid gray;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 900px;
-    background-color: azure;
-}
 
-
-
-
-#submit {
+#submit1,
+#submit2,
+#submit3,
+#submit4 {
     width: 100px;
     height: 40px;
     background-color: violet;

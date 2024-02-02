@@ -36,12 +36,9 @@ async function getUserDetails(userName) {
     }
 
 }
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById("form");
     const input = document.getElementById("search");
-
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         const userName = input.value;

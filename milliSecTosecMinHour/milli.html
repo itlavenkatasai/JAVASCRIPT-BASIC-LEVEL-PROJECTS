@@ -9,12 +9,40 @@
 
 <body>
     <div id="parent">
-        <h2>CONVERT MILLISECONDS TO SECONDS</h2>
-        <form>
-            <input type="text" id="input1" placeholder="Enter MilliSeconds Here"><br>
-            <input type="submit" id="submit" onclick="calculateSeconds(event)">
-        </form>
-        <p id="output1"></p>
+        <div id="child1">
+            <h2>CONVERT MILLISECONDS TO SECONDS</h2>
+            <form>
+                <input type="text" id="input1" placeholder="Enter MilliSeconds Here"><br>
+                <input type="submit" id="submit1" onclick="calculateSeconds(event)"><br>
+                <input type="text" id="output1" readonly>
+            </form>
+
+        </div>
+        <div id="child2">
+            <h2>CONVERT MILLISECONDS TO MINUTES</h2>
+            <form>
+                <input type="text" id="input2" placeholder="Enter MilliSeconds Here"><br>
+                <input type="submit" id="submit2" onclick="calculateMinutes(event)"><br>
+                <input type="text" id="output2" readonly>
+            </form>
+
+        </div>
+        <div id="child3">
+            <h2>CONVERT MILLISECONDS TO HOURS</h2>
+            <form>
+                <input type="text" id="input3" placeholder="Enter MilliSeconds Here"><br>
+                <input type="submit" id="submit3" onclick=" calculateHours(event)"><br>
+                <input type="text" id="output3" readonly>
+            </form>
+        </div>
+        <div id="child4">
+            <h2>CONVERT MILLISECONDS TO HH:MM:SS</h2>
+            <form>
+                <input type="text" id="input4" placeholder="Enter MilliSeconds Here"><br>
+                <input type="submit" id="submit4" onclick="calculateHMS(event)"><br>
+                <input type="text" id="output4" readonly>
+            </form>
+        </div>
     </div>
 </body>
 
